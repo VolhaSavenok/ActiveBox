@@ -50,6 +50,14 @@ padding: 0 16px;
     background-size: cover;
     position: relative;
     margin-bottom: 116px;
+
+    @media(max-width:1024px){
+        margin-bottom: 78px;
+    }
+    @media(max-width:320px){
+margin-bottom: 40px;
+    }
+    
 }
 
  .wrapper::before{
@@ -63,54 +71,52 @@ padding: 0 16px;
         top:0;
         }
 
-.header{
+    .header{
 
- padding: 36px 0 32px;
- position: relative;
+    padding: 36px 0 32px;
+    position: relative;
 
 
-    &__container{
-
-        display: flex;
-        justify-content: space-between;
-       
-    }
-        
-    
+        &__container{
+            display: flex;
+            justify-content: space-between;
+        }
+            
         &__logo{
             display: flex;
-        }
+            }
         &__logo:hover{
             transform: scale(1.5);
-        }
-    
-     .nav
-    {    display: flex;
-        justify-content: center;
-        column-gap: 60px;
-        align-items: center;
+            }
         
-        &__item{
+        .nav{
+            display: flex;
+            justify-content: center;
+            column-gap: 60px;
+            align-items: center;
+            
+                &__item{
 
-        text-decoration:none;
-        text-transform: uppercase;
-        text-align: center;
-        @include font($Raleway,13px ,$bold ,$white,15px)
-         }
+                text-decoration:none;
+                text-transform: uppercase;
+                text-align: center;
+                @include font($Raleway,13px ,$bold ,$white,15px)
 
-         &__item:active{
-            color: #E71414;
-    
-         }
-         &__item:hover{
-            color: #BABBC5;
-         }
-         
+                @media(max-width:1024px){
+                    font-size:12px;
+                    line-height:14px;
+                }
+                }
+
+                &__item:active{
+                    color: #E71414;
+                }
+                &__item:hover{
+                    color: #BABBC5;
+                }   
+        }
     }
-    
-    }
 
-    
     .header::after{
         display: inline-block;
         content: ' ';
@@ -120,13 +126,23 @@ padding: 0 16px;
         left: 50%;
         bottom: 5px;
         transform: translateX(-35%);
+
+        @media(max-width:1024px){
+            width: 119px;
+        }
         }
     
 
     .banner{
         padding: 130px 0 120px;
-        
         position: relative;
+
+        @media(max-width:1024px) {
+            padding: 157px 0 126px ;  
+        }
+        @media(max-width:320px){
+            padding: 50px 0 52px ;   
+        }
         
 
         &__title{
@@ -134,15 +150,31 @@ padding: 0 16px;
             text-transform: uppercase;
             text-align: center;
             margin-bottom: 32px;
-            @include font($Raleway,64px ,$black ,$white, 75px)
+            @include font($Raleway,64px ,$black ,$white, 75px);
+            @media(max-width:320px){
+                font-size:36px;
+                line-height: 42px;
+            }
+            @media(max-width:1024px){
+                font-size:48px;
+                line-height: 56px;
+            }
         }
 
         &__text{
             
             text-align: center;
-            @include font($Raleway,24px ,$regular ,$white , 28px)
-
+            @include font($Raleway,24px ,$regular ,$white , 28px);
+            @media(max-width: 1024px){
+                font-size: 18px;
+                line-height: 21px;
+            }
+            @media(max-width: 320px){
+                font-size: 14px;
+                line-height: 16px;
+            }
         }
+
         .button{
             
             background-color: $button-color;
@@ -153,7 +185,21 @@ padding: 0 16px;
             display: block;
             margin: 0 auto;
             margin-top: 80px;
-            @include font($Raleway,$buttonfont-size ,$black ,$white ,$buttonline-height )
+            @include font($Raleway,$buttonfont-size ,$black ,$white ,$buttonline-height );
+            @media(max-width:1024px){
+                font-size: 24px;
+                line-height: 28px;
+                margin-top: 49.29px;
+                padding:18px 0;
+                max-width: 314px;
+            }
+            @media(max-width:320px){
+                font-size: 24px;
+                line-height: 28px;
+                margin-top: 89.14px;
+                padding:18px 0;
+                max-width: 280px;
+            }
         }
         .button:hover{
             background-color: $buttonhover;
@@ -174,6 +220,10 @@ padding: 0 16px;
         left: 50%;
         top: -5px;
         transform: translateX(-50%);
+
+        @media(max-width:1024px){
+            width: 984px;
+        }
         }
 
 
