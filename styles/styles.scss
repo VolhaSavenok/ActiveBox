@@ -28,6 +28,14 @@ $buttonpadding:28px 0;
 $buttonhover:#E71414;
 $buttonactive:#FF4343;
 
+@mixin font($fontfamily,$fontsize, $fontweight,$color,$lineheight){
+    font-family: $fontfamily;
+    font-size: $fontsize;
+    font-weight: $fontweight;
+    color: $color;
+    line-height: $lineheight;
+}
+
 .container
 {
 max-width: 1202px;
@@ -83,15 +91,13 @@ padding: 0 16px;
         align-items: center;
         
         &__item{
-        font-family: $Raleway;
-        font-weight: $bold;
-        color: $white;
+
         text-decoration:none;
-        line-height: 15px;
-        font-size: 13px;
         text-transform: uppercase;
         text-align: center;
+        @include font($Raleway,13px ,$bold ,$white,15px)
          }
+
          &__item:active{
             color: #E71414;
     
@@ -122,47 +128,32 @@ padding: 0 16px;
         
         position: relative;
         
-        &__container{
-           
-           
-         
-        }
 
         &__title{
-            font-family: $Raleway;
-            font-weight: $black;
-            color: $white;
-            font-size: 64px;
-            line-height: 75px;
+            
             text-transform: uppercase;
             text-align: center;
             margin-bottom: 32px;
-
+            @include font($Raleway,64px ,$black ,$white, 75px)
         }
 
         &__text{
-            font-family: $Raleway;
-            font-weight: $regular;
-            color: $white;
-            font-size: 24px;
-            line-height: 28px;
+            
             text-align: center;
+            @include font($Raleway,24px ,$regular ,$white , 28px)
 
         }
         .button{
-            font-family: $Raleway;
-            font-size: $buttonfont-size;
-            line-height: $buttonline-height;
+            
             background-color: $button-color;
-            color: $white;
             border: none;
             max-width: $buttonwidth;
             width: 100%;
             padding: $buttonpadding;
-            font-weight: $black;
             display: block;
             margin: 0 auto;
             margin-top: 80px;
+            @include font($Raleway,$buttonfont-size ,$black ,$white ,$buttonline-height )
         }
         .button:hover{
             background-color: $buttonhover;
