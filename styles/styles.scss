@@ -220,140 +220,28 @@ padding: 0 16px;
 
 .icons{
 
-<<<<<<< HEAD
- padding: 36px 0 32px;
- position: absolute;
-=======
-}
->>>>>>> 2a50bcebfd2295a8bc91992532529624eb17d9e7
-
-&__container{
-display:grid;
-grid-template-columns: 3;
-grid-template-rows: 2;
 }
 
-<<<<<<< HEAD
-    &__container{
+.icons__container{
+}
 
-        display: flex;
-        justify-content: space-between;
-       
-    }
-        
-    
-        &__logo{
-            display: flex;
-        }
-        &__logo:hover{
-            transform: scale(1.5);
-        }
-    
-     .nav
-    {    display: flex;
-        justify-content: center;
-        column-gap: 60px;
-        align-items: center;
-        
-        &__item{
-        font-family: $Raleway;
-        font-weight: $bold;
-        color: $white;
-        text-decoration:none;
-        line-height: 15px;
-        font-size: 13px;
-        text-transform: uppercase;
-        text-align: center;
-         }
-         &__item:active{
-            color: #E71414;
-    
-         }
-         &__item:hover{
-            color: #BABBC5;
-         }
-         
-    }
-    
-    }
-
-    
-    .header::after{
-        display: inline-block;
-        content: ' ';
-        border: 3px solid #BABBC5;
-        width: 134px;
-        position: absolute;
-        left: 700px;
-        bottom:5px;
-        }
-    
-
-    .banner{
-        padding: 130px 0 120px;
-        
-        &__container{
-
-        }
-
-        &__title{
-            font-family: $Raleway;
-            font-weight: $black;
-            color: $white;
-            font-size: 64px;
-            line-height: 75px;
-            text-transform: uppercase;
-            text-align: center;
-            margin-bottom: 32px;
-
-        }
-
-        &__text{
-            font-family: $Raleway;
-            font-weight: $regular;
-            color: $white;
-            font-size: 24px;
-            line-height: 28px;
-            text-align: center;
-
-        }
-        .button{
-            font-family: $Raleway;
-            font-size: $buttonfont-size;
-            line-height: $buttonline-height;
-            background-color: $button-color;
-            color: $white;
-            border: none;
-            max-width: $buttonwidth;
-            width: 100%;
-            padding: $buttonpadding;
-            font-weight: $black;
-            display: block;
-            margin: 0 auto;
-            margin-top: 80px;
-        }
-        .button:hover{
-            background-color: $buttonhover;
-        }
-
-        .button:active{
-            background: #FF4343;
-            box-shadow: 4px 4px 30px #FF4343;
-        }
-=======
-&icons__element{
+.icons__element{
+    display: block;
 max-width: 370px;
+}
 
-    &__wrapper{
->>>>>>> 2a50bcebfd2295a8bc91992532529624eb17d9e7
-
-    }
-    &__title{
+.icons__element__wrapper{
 
     }
-    &__text{
-
+.icons__element__title{
+@include font($Raleway,24px ,$black ,#2D3033 ,28px )
     }
+ .icons__element__text{
+        @include font($Raleway,18px,$regular,$font-color3,21px )
+    }
+
+    
+
 
 
      
