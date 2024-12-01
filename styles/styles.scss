@@ -220,13 +220,20 @@ padding: 0 16px;
 
 .icons{
 
+<<<<<<< HEAD
  padding: 36px 0 32px;
  position: absolute;
+=======
+}
+>>>>>>> 2a50bcebfd2295a8bc91992532529624eb17d9e7
 
 &__container{
 display:grid;
+grid-template-columns: 3;
+grid-template-rows: 2;
 }
 
+<<<<<<< HEAD
     &__container{
 
         display: flex;
@@ -333,6 +340,12 @@ display:grid;
             background: #FF4343;
             box-shadow: 4px 4px 30px #FF4343;
         }
+=======
+&icons__element{
+max-width: 370px;
+
+    &__wrapper{
+>>>>>>> 2a50bcebfd2295a8bc91992532529624eb17d9e7
 
     }
     &__title{
