@@ -220,128 +220,17 @@ padding: 0 16px;
 
 .icons{
 
-<<<<<<< HEAD
- padding: 36px 0 32px;
- position: absolute;
-=======
 }
->>>>>>> cf02290adf08f6ac07ce1ddd2711531225ac8706
 
 &__container{
 display:grid;
 }
 
-<<<<<<< HEAD
-    &__container{
-
-        display: flex;
-        justify-content: space-between;
-       
-    }
-        
-    
-        &__logo{
-            display: flex;
-        }
-        &__logo:hover{
-            transform: scale(1.5);
-        }
-    
-     .nav
-    {    display: flex;
-        justify-content: center;
-        column-gap: 60px;
-        align-items: center;
-        
-        &__item{
-        font-family: $Raleway;
-        font-weight: $bold;
-        color: $white;
-        text-decoration:none;
-        line-height: 15px;
-        font-size: 13px;
-        text-transform: uppercase;
-        text-align: center;
-         }
-         &__item:active{
-            color: #E71414;
-    
-         }
-         &__item:hover{
-            color: #BABBC5;
-         }
-         
-    }
-    
-    }
-
-    
-    .header::after{
-        display: inline-block;
-        content: ' ';
-        border: 3px solid #BABBC5;
-        width: 134px;
-        position: absolute;
-        left: 700px;
-        bottom:5px;
-        }
-    
-
-    .banner{
-        padding: 130px 0 120px;
-        
-        &__container{
-
-        }
-
-        &__title{
-            font-family: $Raleway;
-            font-weight: $black;
-            color: $white;
-            font-size: 64px;
-            line-height: 75px;
-            text-transform: uppercase;
-            text-align: center;
-            margin-bottom: 32px;
-
-        }
-
-        &__text{
-            font-family: $Raleway;
-            font-weight: $regular;
-            color: $white;
-            font-size: 24px;
-            line-height: 28px;
-            text-align: center;
-
-        }
-        .button{
-            font-family: $Raleway;
-            font-size: $buttonfont-size;
-            line-height: $buttonline-height;
-            background-color: $button-color;
-            color: $white;
-            border: none;
-            max-width: $buttonwidth;
-            width: 100%;
-            padding: $buttonpadding;
-            font-weight: $black;
-            display: block;
-            margin: 0 auto;
-            margin-top: 80px;
-        }
-        .button:hover{
-            background-color: $buttonhover;
-        }
-
-        .button:active{
-            background: #FF4343;
-            box-shadow: 4px 4px 30px #FF4343;
-        }
-=======
 &__element{
+grid-template-columns: 3;
+grid-template-rows: 2;
+
     &__wrapper{
->>>>>>> cf02290adf08f6ac07ce1ddd2711531225ac8706
 
     }
     &__title{
