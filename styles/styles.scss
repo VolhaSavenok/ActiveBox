@@ -224,11 +224,12 @@ padding: 0 16px;
 
 &__container{
 display:grid;
-}
-
-&__element{
 grid-template-columns: 3;
 grid-template-rows: 2;
+}
+
+&icons__element{
+max-width: 370px;
 
     &__wrapper{
 
