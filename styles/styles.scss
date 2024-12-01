@@ -58,7 +58,7 @@ padding: 0 16px;
 .header{
 
  padding: 36px 0 32px;
- position: relative;
+ position: absolute;
 
 
     &__container{
@@ -119,12 +119,8 @@ padding: 0 16px;
     .banner{
         padding: 130px 0 120px;
         
-        position: relative;
-        
         &__container{
-           
-           
-         
+
         }
 
         &__title{
