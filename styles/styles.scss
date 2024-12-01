@@ -1,5 +1,3 @@
-
-
 *
 {
 margin: 0;
@@ -41,8 +39,7 @@ $buttonactive:#FF4343;
 max-width: 1202px;
 margin: 0 auto;
 padding: 0 16px;
-}
-        
+}       
 
 .header{
    position: fixed;
@@ -57,6 +54,10 @@ padding: 0 16px;
         align-items: center;
         column-gap: 30px;
         border-bottom: 1px solid #BABBC5;
+
+        @media screen and (max-width:767px){
+            border-bottom: none;
+        }
         }
             
     &__logo{
@@ -65,11 +66,16 @@ padding: 0 16px;
     }
     &__logo:hover{
         transform: scale(1.5);
+        @media screen and (max-width:767px){
+        &:hover{
+        transform: scale(1);
+        }
+        }  
     }
         
    .nav{
       display: flex;
-      column-gap: 30px;
+      column-gap: 5px;
             
         &__item{
             text-decoration:none;
@@ -80,127 +86,127 @@ padding: 0 16px;
             text-align: center;
             border-bottom: 3px solid transparent;
             min-width: 134px;
-
                 @include font($Raleway,13px ,$bold ,$white,15px);
-
                 @media screen and (max-width: 1024px){
                     font-size:12px;
                     line-height:14px;
+                    column-gap: 5px;
+                    min-width: 112px;
                 }
-                @media screen and (max-width:768px){
-                    display: none;
+                @media screen and (max-width:767px){
+                    display: none;    
                 }
                 
-                &__item:active{
+                &:active{
                     color: #E71414;
                     border-bottom: 3px solid #E71414;
                 }
-                &__item:hover{
+                &:hover{
                     color: #BABBC5;
                     border-bottom: 3px solid #BABBC5;
                 }         
         }
         .nav__icon{
             display: none;
-       } 
-            
-}
-        .header::before{
-            display: inline-block;
-            content: ' ';
-            border: 1px solid #BABBC5;
-            width: 1170px;
-            position: absolute;
-            left: 50%;
-            top: -5px;
-            transform: translateX(-50%);
-    }
 
-    .banner{
+            @media screen and (max-width:767px){
+            display:block;
+            padding-top: 19px;
+            padding-bottom: 19px;
+            &:hover{
+                transform: scale(1.5);
+                }
+            }
+       }  
+    }   
+}
+
+.banner{
         background-image: url(../media/1.png) ;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         position: relative;
         margin-bottom: 116px;
-        padding: 130px 0 120px;
-    
-        @media(max-width:1024px){
-            margin-bottom: 78px;
+        padding: 237px 0 120px;
+
+        @media screen and (max-width:767px){
+        padding:106px 0 52px ;
+        margin-bottom: 44px;
         }
-        @media(max-width:320px){
-        margin-bottom: 40px;
+        @media screen and (max-width:1024px){
+        padding: 257px 0 126px;
+        margin-bottom: 78px;
         }
 
         &__container{
             position: relative;
         }
         &__title{
-            
             text-transform: uppercase;
             text-align: center;
             margin-bottom: 32px;
             @include font($Raleway,64px ,$black ,$white, 75px);
-            @media(max-width:320px){
+            @media screen and (max-width:767px){
                 font-size:36px;
                 line-height: 42px;
+                margin-bottom: 32px;    
             }
-            @media(max-width:1024px){
+            @media screen and (max-width:1024px){
                 font-size:48px;
                 line-height: 56px;
+                margin-bottom: 62px;
             }
         }
 
         &__text{
-            
             text-align: center;
+            max-width: 999px;
             @include font($Raleway,24px ,$regular ,$white , 28px);
-            @media(max-width: 1024px){
-                font-size: 18px;
-                line-height: 21px;
-            }
-            @media(max-width: 320px){
+            @media screen and (max-width:767px){
                 font-size: 14px;
                 line-height: 16px;
+            }
+            @media screen and (max-width:1024px){
+                font-size:18px;
+                line-height: 21px;
             }
         }
 
         .button{
-            
             background-color: $button-color;
             border: none;
             max-width: $buttonwidth;
             width: 100%;
             padding: $buttonpadding;
+            text-transform: uppercase;
             display: block;
             margin: 0 auto;
             margin-top: 80px;
             @include font($Raleway,$buttonfont-size ,$black ,$white ,$buttonline-height );
-            @media(max-width:1024px){
+            @media screen and (max-width:767px){
                 font-size: 24px;
                 line-height: 28px;
-                margin-top: 49.29px;
-                padding:18px 0;
-                max-width: 314px;
-            }
-            @media(max-width:320px){
-                font-size: 24px;
-                line-height: 28px;
-                margin-top: 89.14px;
+                margin-top: 49px;
                 padding:18px 0;
                 max-width: 280px;
             }
+            @media screen and (max-width:1024px){
+                font-size: 24px;
+                line-height: 28px;
+                margin-top: 89px;
+                padding: 28px 0;
+                max-width: 314px;
         }
-        .button:hover{
+        &.button:hover{
             background-color: $buttonhover;
         }
-
-        .button:active{
+        &.button:active{
             background: #FF4343;
             box-shadow: 4px 4px 30px #FF4343;
-        }
-         
+        } 
     }
+}
     .banner:before{
         content:' ';
         display:block;
@@ -211,4 +217,4 @@ padding: 0 16px;
         left:0;
         top:0;
         }
-}
+     
