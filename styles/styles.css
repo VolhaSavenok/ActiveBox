@@ -29,6 +29,7 @@
 @media screen and (max-width: 767px) {
   .header__container {
     border-bottom: none;
+    padding: 19px 0;
   }
 }
 .header__logo {
@@ -50,8 +51,6 @@
 }
 .header .nav__item {
   text-decoration: none;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
   padding-top: 36px;
   padding-bottom: 32px;
   text-transform: uppercase;
@@ -73,27 +72,38 @@
     min-width: 112px;
   }
 }
+@media screen and (max-width: 793px) {
+  .header .nav__item {
+    font-size: 12px;
+    line-height: 14px;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+    min-width: 100px;
+  }
+}
 @media screen and (max-width: 767px) {
   .header .nav__item {
     display: none;
   }
 }
-.header .nav__item:active {
-  color: #E71414;
-  border-bottom: 3px solid #E71414;
-}
 .header .nav__item:hover {
   color: #BABBC5;
   border-bottom: 3px solid #BABBC5;
+}
+.header .nav__item:active {
+  color: #E71414;
+  border-bottom: 3px solid #E71414;
 }
 .header .nav .nav__icon {
   display: none;
 }
 @media screen and (max-width: 767px) {
   .header .nav .nav__icon {
-    display: block;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
   }
   .header .nav .nav__icon:hover {
     transform: scale(1.5);
@@ -109,16 +119,16 @@
   margin-bottom: 116px;
   padding: 237px 0 120px;
 }
-@media screen and (max-width: 767px) {
-  .banner {
-    padding: 106px 0 52px;
-    margin-bottom: 44px;
-  }
-}
 @media screen and (max-width: 1024px) {
   .banner {
     padding: 257px 0 126px;
     margin-bottom: 78px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner {
+    padding: 106px 0 52px;
+    margin-bottom: 44px;
   }
 }
 .banner__container {
@@ -134,13 +144,6 @@
   color: #ffffff;
   line-height: 75px;
 }
-@media screen and (max-width: 767px) {
-  .banner__title {
-    font-size: 36px;
-    line-height: 42px;
-    margin-bottom: 32px;
-  }
-}
 @media screen and (max-width: 1024px) {
   .banner__title {
     font-size: 48px;
@@ -148,25 +151,33 @@
     margin-bottom: 62px;
   }
 }
+@media screen and (max-width: 767px) {
+  .banner__title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 32px;
+  }
+}
 .banner__text {
   text-align: center;
   max-width: 999px;
+  margin: 0 auto;
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: 400;
   color: #ffffff;
   line-height: 28px;
 }
-@media screen and (max-width: 767px) {
-  .banner__text {
-    font-size: 14px;
-    line-height: 16px;
-  }
-}
 @media screen and (max-width: 1024px) {
   .banner__text {
     font-size: 18px;
     line-height: 21px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner__text {
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 .banner .button {
@@ -185,15 +196,6 @@
   color: #ffffff;
   line-height: 28px;
 }
-@media screen and (max-width: 767px) {
-  .banner .button {
-    font-size: 24px;
-    line-height: 28px;
-    margin-top: 49px;
-    padding: 18px 0;
-    max-width: 280px;
-  }
-}
 @media screen and (max-width: 1024px) {
   .banner .button {
     font-size: 24px;
@@ -201,6 +203,15 @@
     margin-top: 89px;
     padding: 28px 0;
     max-width: 314px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner .button {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 49px;
+    padding: 18px 0;
+    max-width: 280px;
   }
 }
 .banner .button.button:hover {
@@ -260,7 +271,9 @@
   margin: 0 auto 29px;
   width: 100px;
   height: 100px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1024px) {
   .icons__element__wrapper {
@@ -283,25 +296,24 @@
   color: #2D3033;
   line-height: 28px;
   text-align: center;
-  border: 1px solid transparent;
-  padding: 22px 0;
+  margin-bottom: 42px;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 1024px) {
   .icons__element__title {
     font-size: 18px;
     line-height: 21px;
-    padding: 20px 0;
+    margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 1024px) {
   .icons__element__title {
     font-size: 18px;
     line-height: 21px;
-    padding: 17px 0 14px;
+    margin-bottom: 37px;
   }
 }
 .icons__element__text {
-  margin-top: 20px;
   text-align: center;
   font-size: 18px;
   color: #6C7279;
@@ -311,13 +323,11 @@
   .icons__element__text {
     font-size: 14px;
     line-height: 16px;
-    margin-top: 4px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
   .icons__element__text {
     font-size: 14px;
     line-height: 16px;
-    margin-top: 1px;
   }
 }/*# sourceMappingURL=styles.css.map */
