@@ -341,6 +341,9 @@
   }
 }
 
+.start {
+  max-width: 1510px;
+}
 .start__container {
   max-width: 1170px;
   margin-bottom: 114px;
