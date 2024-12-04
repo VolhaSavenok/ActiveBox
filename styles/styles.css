@@ -388,6 +388,11 @@
 .design__content:hover {
   opacity: 1;
 }
+.design__content:active {
+  background: rgba(185, 12, 12, 0.8);
+  border: 2px solid #FFFFFF;
+  opacity: 1;
+}
 .design__title {
   font-family: "Raleway", sans-serif;
   font-size: 24px;

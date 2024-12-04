@@ -363,6 +363,11 @@ line-height: 21px;
             &:hover{
                 opacity: 1;
             }
+            &:active{
+                background: rgba(185, 12, 12, 0.8);
+                border: 2px solid #FFFFFF;
+                opacity: 1;
+            }
             }
 
             &__title{
