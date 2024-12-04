@@ -401,42 +401,118 @@ line-height: 21px;
 
 .employees{
     margin-bottom: 114px;
+    @media screen and (max-width: 1024px){
+        margin-bottom: 78px;    
+    }
+    @media screen and (max-width:767px){
+    margin-bottom: 646px;
+    }
+
     &__container{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         column-gap: 30px;
+        @media screen and (max-width: 1024px){
+           max-width: 984px;
+           grid-template-columns: repeat(4,1fr);
+           column-gap: 25px;
+        }
+        @media screen and (max-width:767px){
+           max-width: 280px;
+           grid-template-columns: 1;
+           row-gap: 56px;
+        }
     }
     &__element{
         display: flex;
         flex-direction: column;
         max-width: 270px;
         justify-content: flex-start;
+        @media screen and (max-width: 1024px){
+            max-width: 227px;
+         }
+         @media screen and (max-width:767px){
+            max-width: 280px;
+         }
     }
     &__wrapper-icon{
         margin-bottom: 30px;
+        width: 270px;
+        height: 270px;
+        overflow: hidden;
+        @media screen and (max-width: 1024px){
+            width: 227px;
+            height: 227px;
+            margin-bottom: 25px;
+        }
+        @media screen and (max-width:767px){
+            width: 280px;
+            height: 227px;
+            margin-bottom: 25px;  
+        }
     }
     &__image{
-       
-
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
+       
     &__name{
         margin-bottom: 6px;
-        @include font($Raleway,24px ,$bold ,$black-color ,28px);
+        @include font($Raleway,24px ,$bold ,#2D3033 ,28px);
+        @media screen and (max-width: 1024px){
+           font-size: 18px;
+           line-height: 21px;
+           margin-bottom: 4.6px;
+        }
+        @media screen and (max-width:767px){
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 4.6px;
+        }
     }
     &__title{
         text-transform: uppercase;
         margin-bottom: 18px;
         @include font($Raleway,18px ,$regular ,#FF4343 ,21px); 
+        @media screen and (max-width: 1024px){
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 22.45px;
+        }
+        @media screen and (max-width:767px){
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 38.49px;
+        }
     }
+
     &__text{
         @include font($Raleway,18px ,$regular ,#6C7279 ,21px);
+        @media screen and (max-width: 1024px){
+            font-size: 14px;
+            line-height: 16px;
+        }
+        @media screen and (max-width:767px){
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
+
     &__icons{
         margin-top: 38px;
         display: flex;
         column-gap: 6px;
         align-items: start;
         justify-content: start;
+        @media screen and (max-width: 1024px){
+            margin-top: 39px; 
+            column-gap: 5px;
+        }
+        @media screen and (max-width:767px){
+            column-gap: 6px;
+            margin-top: 55px; 
+        }
 
     }
     &__wrapper-icons{
@@ -446,6 +522,10 @@ line-height: 21px;
         width: 39px;
         height: 39px;
         border: 1px solid #C6CBCD;
+        @media screen and (max-width: 1024px){
+            width: 33px;
+            height: 33px;
+        }
        
     }
 }
