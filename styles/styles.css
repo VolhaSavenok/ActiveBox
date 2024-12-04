@@ -384,6 +384,7 @@
   align-items: center;
   padding: 10px;
   opacity: 0;
+  transition: 1s;
 }
 .design__content:hover {
   opacity: 1;

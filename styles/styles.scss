@@ -360,6 +360,7 @@ line-height: 21px;
             align-items: center;
             padding: 10px;
             opacity:0;
+            transition: 1s;
             &:hover{
                 opacity: 1;
             }
