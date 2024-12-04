@@ -399,6 +399,56 @@ line-height: 21px;
             }
 }
 
+.employees{
+    margin-bottom: 114px;
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 30px;
+    }
+    &__element{
+        display: flex;
+        flex-direction: column;
+        max-width: 270px;
+        justify-content: flex-start;
+    }
+    &__wrapper-icon{
+        margin-bottom: 30px;
+    }
+    &__image{
+       
+
+    }
+    &__name{
+        margin-bottom: 6px;
+        @include font($Raleway,24px ,$bold ,$black-color ,28px);
+    }
+    &__title{
+        text-transform: uppercase;
+        margin-bottom: 18px;
+        @include font($Raleway,18px ,$regular ,#FF4343 ,21px); 
+    }
+    &__text{
+        @include font($Raleway,18px ,$regular ,#6C7279 ,21px);
+    }
+    &__icons{
+        margin-top: 38px;
+        display: flex;
+        column-gap: 6px;
+        align-items: start;
+        justify-content: start;
+
+    }
+    &__wrapper-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 39px;
+        height: 39px;
+        border: 1px solid #C6CBCD;
+       
+    }
+}
 
 .start{
     
