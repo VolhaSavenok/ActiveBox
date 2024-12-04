@@ -39,6 +39,9 @@ $buttonactive:#FF4343;
 max-width: 1202px;
 margin: 0 auto;
 padding: 0 16px;
+@media screen and (max-width: 1024px){
+    padding: 0;
+}
 }       
 
 .button{
@@ -362,6 +365,7 @@ line-height: 21px;
             opacity:0;
             transition: 1s;
             &:hover{
+                cursor: pointer;
                 opacity: 1;
             }
             &:active{
@@ -402,8 +406,10 @@ line-height: 21px;
 .employees{
     margin-bottom: 114px;
     @media screen and (max-width: 1024px){
-        margin-bottom: 78px;    
+        margin-bottom: 78px;  
+        padding: 0 16px;  
     }
+
     @media screen and (max-width:767px){
     margin-bottom: 646px;
     }
@@ -419,7 +425,7 @@ line-height: 21px;
         }
         @media screen and (max-width:767px){
            max-width: 280px;
-           grid-template-columns: 1;
+           grid-template-columns: 1fr;
            row-gap: 56px;
         }
     }
@@ -525,6 +531,20 @@ line-height: 21px;
         @media screen and (max-width: 1024px){
             width: 33px;
             height: 33px;
+        }
+
+        &:hover path{
+            fill: #FF4343;
+        }
+        &:hover{
+            border-color: #FF4343;
+            transform: scale(1.2);
+        }
+        &:active path{
+            fill: #E71414; 
+        }
+        &:active{
+            border-color: #E71414; 
         }
        
     }
