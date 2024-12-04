@@ -342,7 +342,7 @@
 }
 
 .design {
-  margin-bottom: 116px;
+  margin-bottom: 114px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
