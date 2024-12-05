@@ -786,8 +786,33 @@
        column-gap: 30px;
   padding: 71px 10px 108px;
 }
+@media screen and (max-width: 1024px) {
+  .footer__container {
+    padding: 46px 10px 44px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__container {
+    row-gap: 59px;
+    padding: 34px 10px 33px;
+    grid-template-columns: 1fr;
+  }
+}
 .footer__location {
   max-width: 370px;
+}
+@media screen and (max-width: 1024px) {
+  .footer__location {
+    max-width: 315px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__location {
+    max-width: 280px;
+    margin-bottom: 69px;
+  }
 }
 .footer__title {
   font-family: "Raleway", sans-serif;
@@ -795,12 +820,38 @@
   font-weight: 700;
   color: #ffffff;
   line-height: 21px;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
   text-transform: uppercase;
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  .footer__title {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__title {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 34px;
+  }
+}
 .footer__title-margin {
-  margin-bottom: 49px;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 1024px) {
+  .footer__title-margin {
+    margin-bottom: 33px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__title-margin {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 37px;
+  }
 }
 .footer__text {
   text-align: center;
@@ -810,8 +861,31 @@
   color: #ffffff;
   line-height: 15px;
 }
+@media screen and (max-width: 1024px) {
+  .footer__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
 .footer__contact {
   max-width: 370px;
+}
+@media screen and (max-width: 1024px) {
+  .footer__contact {
+    max-width: 315px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__contact {
+    max-width: 280px;
+    margin-bottom: 59px;
+  }
 }
 .footer__wrapper {
   display: flex;
@@ -820,6 +894,18 @@
   -moz-column-gap: 27px;
        column-gap: 27px;
 }
+@media screen and (max-width: 1024px) {
+  .footer__wrapper {
+    -moz-column-gap: 23px;
+         column-gap: 23px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__wrapper {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+}
 .footer__wrapper-icon {
   display: flex;
   justify-content: center;
@@ -827,13 +913,59 @@
   border: 1px solid #C6CBCD;
   width: 39px;
   height: 39px;
+  transition: 1s;
+}
+@media screen and (max-width: 1024px) {
+  .footer__wrapper-icon {
+    width: 33px;
+    height: 33px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__wrapper-icon {
+    width: 33px;
+    height: 33px;
+  }
+}
+.footer__wrapper-icon:hover path {
+  fill: #FF4343;
+}
+.footer__wrapper-icon:hover {
+  border-color: #FF4343;
+  transform: scale(1.2);
+}
+.footer__wrapper-icon:active path {
+  fill: #E71414;
+}
+.footer__wrapper-icon:active {
+  border-color: #E71414;
 }
 .footer__about {
   max-width: 370px;
 }
+@media screen and (max-width: 1024px) {
+  .footer__about {
+    max-width: 315px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__about {
+    max-width: 280px;
+  }
+}
 .footer__copyright {
   padding: 24px 10px;
   background-color: #2C3154;
+}
+@media screen and (max-width: 1024px) {
+  .footer__copyright {
+    padding: 14px 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__copyright {
+    padding: 29px 10px;
+  }
 }
 .footer__copyright-text {
   text-align: center;
@@ -845,10 +977,38 @@
   color: #808080;
   line-height: 21px;
 }
+@media screen and (max-width: 1024px) {
+  .footer__copyright-text {
+    max-width: 314px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__copyright-text {
+    max-width: 280px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
 .footer__copyright-text-different {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #ffffff;
   line-height: 21px;
+}
+@media screen and (max-width: 1024px) {
+  .footer__copyright-text-different {
+    max-width: 314px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__copyright-text-different {
+    max-width: 280px;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }/*# sourceMappingURL=styles.css.map */
