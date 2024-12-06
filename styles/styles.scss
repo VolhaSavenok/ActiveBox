@@ -564,11 +564,18 @@ line-height: 21px;
     display: grid;
     grid-template-columns: 49% 51%;
     margin-bottom: 104px;
+    @media screen and (max-width: 1024px){
+        margin-bottom: 111px; 
+    }
+    @media screen and (max-width:767px){
+        grid-template-columns: 39% 61%;
+        margin-bottom: 67px;
+    }
     
 
     &__wrapper-picture{
         position: relative;
-        padding-top: 49%;
+        padding-top: 39%;
         overflow: hidden;
     }
 
@@ -590,6 +597,12 @@ line-height: 21px;
         justify-content: center;
         margin: 0 auto;
         padding: 116px 10px;
+        @media screen and (max-width: 1024px){
+            padding: 47px 10px 110px; 
+        }
+        @media screen and (max-width:767px){
+            padding: 20px 10px 95px;  
+        }
     }
 
     &__text{
@@ -603,10 +616,30 @@ line-height: 21px;
         color: $white;
         line-height: 49px;
         margin-bottom: 15px;
+        @media screen and (max-width: 1024px){
+            max-width: 330px; 
+            font-size: 24px;   
+            line-height: 32px;
+        }
+        @media screen and (max-width:767px){
+            max-width: 275px;  
+            font-size: 24px;   
+            line-height: 32px; 
+        }
     }
 
     &__author{
         @include font($Raleway,13px ,$bold,$white,15px);
+        @media screen and (max-width: 1024px){
+            max-width: 330px; 
+            font-size: 12px;   
+            line-height: 14px;
+        }
+        @media screen and (max-width:767px){
+            max-width: 275px; 
+            font-size: 12px;   
+            line-height: 14px; 
+        }
 
     }
 }
