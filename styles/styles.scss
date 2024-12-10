@@ -39,9 +39,7 @@ $buttonactive:#FF4343;
 max-width: 1202px;
 margin: 0 auto;
 padding: 0 16px;
-@media screen and (max-width: 1024px){
-    padding: 0;
-}
+
 }       
 
 .button{
@@ -111,7 +109,6 @@ padding: 0 16px;
                 @media screen and (max-width: 1024px){
                     font-size:12px;
                     line-height:14px;
-                    column-gap: 5px;
                     min-width: 112px;
                 }
                 @media screen and (max-width:793px){
@@ -334,6 +331,7 @@ line-height: 21px;
     margin-bottom: 114px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 2px;
     @media screen and (max-width: 1024px){
         margin-bottom: 78px;
     }
@@ -362,7 +360,6 @@ line-height: 21px;
             width: 100%;
             height: 100%;
             background: rgba(255, 67, 67, 0.8);
-            border: 2px solid #FFFFFF;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -435,26 +432,14 @@ line-height: 21px;
            row-gap: 56px;
         }
     }
-    &__element{
-        display: flex;
-        flex-direction: column;
-        max-width: 270px;
-        justify-content: flex-start;
-        @media screen and (max-width: 1024px){
-            max-width: 227px;
-         }
-         @media screen and (max-width:767px){
-            max-width: 280px;
-         }
-    }
+      
     &__wrapper-icon{
         margin-bottom: 30px;
     position: relative;
     overflow: hidden;
     padding-top: 100%;
         @media screen and (max-width: 1024px){
-            width: 227px;
-            height: 227px;
+            
             margin-bottom: 25px;
         }
         @media screen and (max-width:767px){
@@ -551,6 +536,7 @@ line-height: 21px;
             transform: scale(1.2);
         }
         &:active path{
+            transition: 1s;
             fill: #E71414; 
         }
         &:active{
@@ -575,7 +561,7 @@ line-height: 21px;
 
     &__wrapper-picture{
         position: relative;
-        padding-top: 39%;
+        padding-top: 62%;
         overflow: hidden;
     }
 
@@ -583,20 +569,21 @@ line-height: 21px;
         position: absolute;
         left: 0;
         top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     &__wrapper-color{
         background-color: #5C3249;
         display:flex;
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
     }
 
     &__content{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        margin: 0 auto;
-        padding: 116px 10px;
+        
         @media screen and (max-width: 1024px){
             padding: 47px 10px 110px; 
         }
@@ -606,9 +593,6 @@ line-height: 21px;
     }
 
     &__text{
-       
-        flex-direction: column;
-        justify-content: center;
         max-width: 471px;
         font-style: italic;
         font-family: $Cardo;
@@ -644,10 +628,11 @@ line-height: 21px;
     }
 }
 .start{
+    margin-bottom: 114px;
     
     &__container{
      max-width: 1170px;
-     margin-bottom: 114px;
+     
      @media screen and (max-width:1024px){
         margin-bottom: 78px; 
         max-width: 984px;
@@ -716,14 +701,18 @@ line-height: 21px;
     }
 
 .footer{
+    
+
         &__end{
         background-color: #353C65;
+        padding: 71px 0 108px;
         }
         &__container{
             display: grid;
+            padding: 0 10px;
             grid-template-columns: repeat(3,1fr);
             column-gap: 30px;
-            padding: 71px 10px 108px;
+            
             @media screen and (max-width: 1024px){
                 padding: 46px 10px 44px;
                 column-gap: 20px;
@@ -733,18 +722,6 @@ line-height: 21px;
                 padding: 34px 10px 33px;
                 grid-template-columns: 1fr; 
             }
-        }
-
-        &__location{
-            max-width: 370px;
-            @media screen and (max-width: 1024px){
-                max-width: 315px;  
-            }
-            @media screen and (max-width:767px){
-                max-width: 280px; 
-                margin-bottom: 69px;
-            }
-
         }
 
         &__title{
@@ -839,6 +816,7 @@ line-height: 21px;
                 transform: scale(1.2);
             }
             &:active path{
+                transition: 1s;
                 fill: #E71414; 
             }
             &:active{
@@ -868,12 +846,15 @@ line-height: 21px;
             @media screen and (max-width:767px){
                 padding:29px 10px;    
             }
+            }
+            &__copyright__container{
+                max-width: 370px;
+                margin: 0 auto;
 
             }
             &__copyright-text{
                 text-align: center;
-                max-width: 370px;
-                margin: 0 auto;
+               
                 @media screen and (max-width: 1024px){
                     max-width: 314px;
                     font-size: 14px;
