@@ -224,10 +224,11 @@
   }
 }
 .banner__button.button:hover {
-  transition: 0.3s;
+  transition: 1s;
   background-color: #E71414;
 }
 .banner__button.button:active {
+  transition: 1s;
   background: #FF4343;
   box-shadow: 4px 4px 30px #FF4343;
 }
@@ -391,11 +392,13 @@
 .design__content:hover {
   cursor: pointer;
   opacity: 1;
+  transition: 1s;
 }
 .design__content:active {
   background: rgba(185, 12, 12, 0.8);
   border: 2px solid #FFFFFF;
   opacity: 1;
+  transition: 1s;
 }
 .design__title {
   font-family: "Raleway", sans-serif;
