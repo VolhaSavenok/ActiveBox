@@ -410,11 +410,11 @@ line-height: 21px;
     margin-bottom: 114px;
     @media screen and (max-width: 1024px){
         margin-bottom: 78px;  
-        padding: 0 16px;  
+         
     }
 
     @media screen and (max-width:767px){
-    margin-bottom: 646px;
+    margin-bottom: 41px;
     }
 
     &__container{
@@ -427,7 +427,7 @@ line-height: 21px;
            column-gap: 25px;
         }
         @media screen and (max-width:767px){
-           max-width: 280px;
+           
            grid-template-columns: 1fr;
            row-gap: 56px;
         }
@@ -550,6 +550,7 @@ line-height: 21px;
     display: grid;
     grid-template-columns: 49% 51%;
     margin-bottom: 104px;
+
     @media screen and (max-width: 1024px){
         margin-bottom: 111px; 
     }
@@ -628,10 +629,11 @@ line-height: 21px;
     }
 }
 .start{
-    margin-bottom: 114px;
+    
     
     &__container{
      max-width: 1170px;
+     margin-bottom: 114px;
      
      @media screen and (max-width:1024px){
         margin-bottom: 78px; 

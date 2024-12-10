@@ -446,12 +446,11 @@
 @media screen and (max-width: 1024px) {
   .employees {
     margin-bottom: 78px;
-    padding: 0 16px;
   }
 }
 @media screen and (max-width: 767px) {
   .employees {
-    margin-bottom: 646px;
+    margin-bottom: 41px;
   }
 }
 .employees__container {
@@ -470,7 +469,6 @@
 }
 @media screen and (max-width: 767px) {
   .employees__container {
-    max-width: 280px;
     grid-template-columns: 1fr;
     row-gap: 56px;
   }
@@ -710,11 +708,9 @@
   }
 }
 
-.start {
-  margin-bottom: 114px;
-}
 .start__container {
   max-width: 1170px;
+  margin-bottom: 114px;
 }
 @media screen and (max-width: 1024px) {
   .start__container {
