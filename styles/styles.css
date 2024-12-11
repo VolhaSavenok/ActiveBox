@@ -809,7 +809,17 @@
 
 .footer__end {
   background-color: #353C65;
-  padding: 71px 0 108px;
+  padding: 71px 0 71px;
+}
+@media screen and (max-width: 1024px) {
+  .footer__end {
+    padding: 46px 10px 41px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__end {
+    padding: 34px 10px 33px;
+  }
 }
 .footer__container {
   display: grid;
@@ -820,7 +830,6 @@
 }
 @media screen and (max-width: 1024px) {
   .footer__container {
-    padding: 46px 10px 44px;
     -moz-column-gap: 20px;
          column-gap: 20px;
   }
@@ -828,7 +837,6 @@
 @media screen and (max-width: 767px) {
   .footer__container {
     row-gap: 59px;
-    padding: 34px 10px 33px;
     grid-template-columns: 1fr;
   }
 }
@@ -853,11 +861,11 @@
   .footer__title {
     font-size: 14px;
     line-height: 16px;
-    margin-bottom: 34px;
+    margin-bottom: 38px;
   }
 }
 .footer__title-margin {
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 }
 @media screen and (max-width: 1024px) {
   .footer__title-margin {
@@ -874,10 +882,10 @@
 .footer__text {
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 400;
   color: #ffffff;
-  line-height: 15px;
+  line-height: 21px;
 }
 @media screen and (max-width: 1024px) {
   .footer__text {
@@ -889,20 +897,6 @@
   .footer__text {
     font-size: 14px;
     line-height: 16px;
-  }
-}
-.footer__contact {
-  max-width: 370px;
-}
-@media screen and (max-width: 1024px) {
-  .footer__contact {
-    max-width: 315px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .footer__contact {
-    max-width: 280px;
-    margin-bottom: 59px;
   }
 }
 .footer__wrapper {
@@ -960,19 +954,6 @@
 .footer__wrapper-icon:active {
   border-color: #E71414;
 }
-.footer__about {
-  max-width: 370px;
-}
-@media screen and (max-width: 1024px) {
-  .footer__about {
-    max-width: 315px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .footer__about {
-    max-width: 280px;
-  }
-}
 .footer__copyright {
   padding: 24px 10px;
   background-color: #2C3154;
@@ -991,6 +972,16 @@
   max-width: 370px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1024px) {
+  .footer__copyright__container {
+    max-width: 314px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__copyright__container {
+    max-width: 280px;
+  }
+}
 .footer__copyright-text {
   text-align: center;
   font-family: "Raleway", sans-serif;
@@ -1001,14 +992,12 @@
 }
 @media screen and (max-width: 1024px) {
   .footer__copyright-text {
-    max-width: 314px;
     font-size: 14px;
     line-height: 16px;
   }
 }
 @media screen and (max-width: 767px) {
   .footer__copyright-text {
-    max-width: 280px;
     font-size: 14px;
     line-height: 16px;
   }
@@ -1022,14 +1011,12 @@
 }
 @media screen and (max-width: 1024px) {
   .footer__copyright-text-different {
-    max-width: 314px;
     font-size: 14px;
     line-height: 16px;
   }
 }
 @media screen and (max-width: 767px) {
   .footer__copyright-text-different {
-    max-width: 280px;
     font-size: 14px;
     line-height: 16px;
   }

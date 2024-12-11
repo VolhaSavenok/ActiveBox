@@ -706,11 +706,16 @@ line-height: 21px;
     }
 
 .footer{
-    
 
         &__end{
         background-color: #353C65;
-        padding: 71px 0 108px;
+        padding: 71px 0 71px;
+        @media screen and (max-width: 1024px){
+            padding: 46px 10px 41px; 
+        }
+        @media screen and (max-width:767px){
+            padding: 34px 10px 33px; 
+        }
         }
         &__container{
             display: grid;
@@ -719,12 +724,10 @@ line-height: 21px;
             column-gap: 30px;
             
             @media screen and (max-width: 1024px){
-                padding: 46px 10px 44px;
                 column-gap: 20px;
             }
             @media screen and (max-width:767px){
                 row-gap: 59px;
-                padding: 34px 10px 33px;
                 grid-template-columns: 1fr; 
             }
         }
@@ -742,11 +745,11 @@ line-height: 21px;
             @media screen and (max-width:767px){
                 font-size: 14px; 
                 line-height: 16px;
-                margin-bottom: 34px; 
+                margin-bottom: 38px; 
             }
         }
         &__title-margin{
-            margin-bottom: 32px;
+            margin-bottom: 48px;
             @media screen and (max-width: 1024px){
                 margin-bottom: 33px;
             }
@@ -759,27 +762,18 @@ line-height: 21px;
 
         &__text{
             text-align: center;
-            @include font($Raleway,13px ,$regular,$white,15px);
+            @include font($Raleway,18px ,$regular,$white,21px);
             @media screen and (max-width: 1024px){
                 font-size: 14px; 
                 line-height: 16px;
+               
             }
             @media screen and (max-width:767px){
                 font-size: 14px; 
                 line-height: 16px;
             }
         }
-        &__contact{
-            max-width: 370px;
-            @media screen and (max-width: 1024px){
-                max-width: 315px;  
-            }
-            @media screen and (max-width:767px){
-                max-width: 280px; 
-                margin-bottom: 59px;
-            }
-            
-        }
+        
         &__wrapper{
             display: flex;
             justify-content: center;
@@ -830,16 +824,7 @@ line-height: 21px;
             
         }
 
-        &__about{
-            max-width: 370px;
-            @media screen and (max-width: 1024px){
-                max-width: 315px;  
-            }
-            @media screen and (max-width:767px){
-                max-width: 280px; 
-            }
-
-        }
+        
 
 
         &__copyright{
@@ -855,32 +840,34 @@ line-height: 21px;
             &__copyright__container{
                 max-width: 370px;
                 margin: 0 auto;
-
+                @media screen and (max-width: 1024px){
+                    max-width: 314px;
+                }
+                @media screen and (max-width:767px){
+                    max-width: 280px; 
+                }
             }
             &__copyright-text{
                 text-align: center;
-               
+                @include font($Raleway,18px ,$regular ,#808080,21px);
+                
                 @media screen and (max-width: 1024px){
-                    max-width: 314px;
                     font-size: 14px;
                     line-height: 16px;
                 }
                 @media screen and (max-width:767px){
-                    max-width: 280px;
                     font-size: 14px;
                     line-height: 16px;    
                 }
-                @include font($Raleway,18px ,$regular ,#808080,21px);
+                
             }
             &__copyright-text-different{
                 @include font($Raleway,18px ,$regular ,$white,21px);
                 @media screen and (max-width: 1024px){
-                    max-width: 314px;
                     font-size: 14px;
                     line-height: 16px;
                 }
                 @media screen and (max-width:767px){
-                    max-width: 280px;
                     font-size: 14px;
                     line-height: 16px;    
                 }
