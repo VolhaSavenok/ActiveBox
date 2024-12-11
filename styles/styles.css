@@ -464,7 +464,6 @@
 }
 @media screen and (max-width: 1024px) {
   .employees__container {
-    max-width: 984px;
     grid-template-columns: repeat(4, 1fr);
     -moz-column-gap: 25px;
          column-gap: 25px;
@@ -489,8 +488,6 @@
 }
 @media screen and (max-width: 767px) {
   .employees__wrapper-icon {
-    width: 280px;
-    height: 227px;
     margin-bottom: 25px;
   }
 }

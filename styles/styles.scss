@@ -236,7 +236,7 @@ padding: 0 16px;
         } 
     }
 }
-    .banner:before{
+.banner:before{
         content:' ';
         display:block;
         width:100%;
@@ -412,10 +412,8 @@ line-height: 21px;
 .employees{
     margin-bottom: 114px;
     @media screen and (max-width: 1024px){
-        margin-bottom: 78px;  
-         
+        margin-bottom: 78px;    
     }
-
     @media screen and (max-width:767px){
     margin-bottom: 41px;
     }
@@ -425,29 +423,24 @@ line-height: 21px;
         grid-template-columns: repeat(4,1fr);
         column-gap: 30px;
         @media screen and (max-width: 1024px){
-           max-width: 984px;
            grid-template-columns: repeat(4,1fr);
            column-gap: 25px;
         }
         @media screen and (max-width:767px){
-           
            grid-template-columns: 1fr;
            row-gap: 56px;
         }
     }
       
     &__wrapper-icon{
-        margin-bottom: 30px;
+    margin-bottom: 30px;
     position: relative;
     overflow: hidden;
     padding-top: 100%;
         @media screen and (max-width: 1024px){
-            
             margin-bottom: 25px;
         }
         @media screen and (max-width:767px){
-            width: 280px;
-            height: 227px;
             margin-bottom: 25px;  
         }
     }
@@ -547,6 +540,7 @@ line-height: 21px;
         }
        
     }
+
 }
 
 .slider{
