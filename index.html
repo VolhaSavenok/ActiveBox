@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="styles/styles.css">
     <title>ActiveBox</title>
 </head>
@@ -304,15 +308,78 @@
     </div>
 
     <div class="slider">
-        <div class="slider__wrapper-picture">
-            <img class="slider__picture" src="../media/10.png" alt="#">
-        </div>
-        <div class="slider__wrapper-color">
-            <div class="slider__content">
-            <p class="slider__text">"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam..."</p>
-            <p class="slider__author">Susan Sims, Interaction Designer at XYZ</p>
+        <!-- Slider main container -->
+        <div class="swiper swiper-activebox">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide  slider__container">
+                <div class="slider__wrapper-picture">
+                    <img class="slider__picture" src="../media/10.png" alt="#">
+                </div>
+                <div class="slider__wrapper-color">
+                    <div class="slider__content">
+                    <p class="slider__text">"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam..."</p>
+                    <p class="slider__author">Susan Sims, Interaction Designer at XYZ</p>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="swiper-slide  slider__container">
+                <div class="slider__wrapper-picture">
+                    <img class="slider__picture" src="../media/10.png" alt="#">
+                </div>
+                <div class="slider__wrapper-color">
+                    <div class="slider__content">
+                    <p class="slider__text"> slide 2</p>
+                    <p class="slider__author">slide text2</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide  slider__container">
+                <div class="slider__wrapper-picture">
+                    <img class="slider__picture" src="../media/10.png" alt="#">
+                </div>
+                <div class="slider__wrapper-color">
+                    <div class="slider__content">
+                    <p class="slider__text">slide 3</p>
+                    <p class="slider__author">slide text 3</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide  slider__container">
+                <div class="slider__wrapper-picture">
+                    <img class="slider__picture" src="../media/10.png" alt="#">
+                </div>
+                <div class="slider__wrapper-color">
+                    <div class="slider__content">
+                    <p class="slider__text">slide 4</p>
+                    <p class="slider__author">slide text 5</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide  slider__container">
+                <div class="slider__wrapper-picture">
+                    <img class="slider__picture" src="../media/10.png" alt="#">
+                </div>
+                <div class="slider__wrapper-color">
+                    <div class="slider__content">
+                    <p class="slider__text">slide 5</p>
+                    <p class="slider__author">slide text 5</p>
+                    </div>
+                </div> 
+
+            </div>
+            
+            </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+  </div>
+   
+        
 
     </div>
 
@@ -372,5 +439,22 @@
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+                    const swiper = new Swiper('.swiper-activebox', {
+            // Optional parameters
+        
+            loop: true,
+            autoHeight: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            
+
+            });
+    </script>
 </body>
 </html>

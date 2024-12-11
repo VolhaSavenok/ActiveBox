@@ -617,17 +617,29 @@
 }
 
 .slider {
-  display: grid;
-  grid-template-columns: 49% 51%;
-  margin-bottom: 104px;
+  margin-bottom: 122px;
 }
 @media screen and (max-width: 1024px) {
   .slider {
-    margin-bottom: 111px;
+    margin-bottom: 77px;
   }
 }
 @media screen and (max-width: 767px) {
   .slider {
+    margin-bottom: 34px;
+  }
+}
+.slider__container {
+  display: grid;
+  grid-template-columns: 49% 51%;
+}
+@media screen and (max-width: 1024px) {
+  .slider__container {
+    margin-bottom: 111px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider__container {
     margin-bottom: 67px;
     display: flex;
     flex-wrap: wrap;
@@ -711,6 +723,59 @@
     font-size: 12px;
     line-height: 14px;
   }
+}
+.slider .swiper {
+  padding-bottom: 45px;
+}
+@media screen and (max-width: 1024px) {
+  .slider .swiper {
+    padding-bottom: 34px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider .swiper {
+    padding-bottom: 33px;
+  }
+}
+.slider .swiper-horizontal > .swiper-pagination-bullets, .slider .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}
+.slider .swiper-pagination {
+  display: flex;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .slider .swiper-pagination {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+.slider .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #7E5D6F;
+  background-color: transparent;
+  opacity: 1;
+}
+@media screen and (max-width: 1024px) {
+  .slider .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+}
+.slider .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .slider .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
+}
+.slider .swiper-pagination-bullet-active {
+  background-color: #7E5D6F;
 }
 
 .start__container {
